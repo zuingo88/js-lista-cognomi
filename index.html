@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test_provajs</title>
+    <style>
+        #container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 750px;
+            height: 400px;
+            margin: auto;
+            color: white;
+            background-color: teal;
+            border: solid 2px black;
+            border-radius: 20px;
+            overflow: auto;
+        }
+
+        .pi {
+            transition: all 0.5s;
+        }
+
+        .pi:hover {
+            scale: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <h1 id="titolo">ciao mondo</h1>
+        <p id="p1" class="pi">tanti saluti</p>
+        <p id="p2" class="pi">tanti saluti</p>
+        <p id="p3" class="pi">tanti saluti</p>
+    </div>
+
+    <script>
+
+        // Chiedere all'utente il suo cognome e inserirlo in un array non ordinato. 
+        // Riordinare l'array e stampare la lista dei cognomi in ordine alfabetico e la posizione "umana" (partendo da 1) del cognome dell'utente.
+
+        // NOTA
+        // Ci sono almeno un paio di funzioni del js che possono tornarvi utili, ma non le abbiamo viste...dovrete cercarle voi!!
+
+        var surname = []
+
+        for (i=0; i<10; i++) {
+            var request = prompt('inserisci qui il tuo cognome');
+            surname.push(request);
+        }
+
+        console.log(surname.sort());
+
+
+    </script>
+
+</body>
+
+</html>
