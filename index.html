@@ -49,15 +49,30 @@
         // NOTA
         // Ci sono almeno un paio di funzioni del js che possono tornarvi utili, ma non le abbiamo viste...dovrete cercarle voi!!
 
-        var surname = []
+        //ordinare lista
+        // var surname = []
 
-        for (i=0; i<10; i++) {
-            var request = prompt('inserisci qui il tuo cognome');
-            surname.push(request);
+        // for (i=0; i<10; i++) {
+        //     var request = prompt('inserisci qui il tuo cognome');
+        //     surname.push(request);
+        // }
+
+        // console.log(surname.sort());
+
+
+        //versione completa
+        var arr = [ 'zapata', 'ibrahimovich', 'caputo', 'ronaldo', 'mertens', 'immobile', 'dzeko' ];
+        var nome = prompt('Inserisci il tuo cognome');
+
+        arr.push(nome);
+        console.log(arr.sort());
+
+        for (i=0; i<arr.length; i++) {
+            var elem = arr[i];
+            if (elem == nome) {
+                console.log( nome, arr.indexOf(nome))
+            }
         }
-
-        console.log(surname.sort());
-
 
     </script>
 
